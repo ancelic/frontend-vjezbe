@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
+  const varijabla1 = 'Coca';
+  const varijabla2 = 'Cola';
+
+  const prikaziTekstFunkcija = (prviString, drugiString) => prviString + ' ' + drugiString;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Ovo je tekst koji se prikazuje na ekranu.</p>
+      <br/>
+      <p>Tekst + varijabla: {varijabla1}</p>
+      <p>{prikaziTekstFunkcija(varijabla1, varijabla2)}</p>
     </div>
   );
 }
